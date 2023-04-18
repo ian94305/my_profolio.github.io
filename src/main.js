@@ -8,7 +8,7 @@ let openNav=function(){
   left.classList.toggle('hide');
 };
 
-hamburger.addEventListener('click',openNav());
+hamburger.addEventListener('click',openNav);
 
 
 

@@ -63,7 +63,7 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: var(--microsoft-janhei);
-    overflow-x: hidden;
+
 
   }
   
@@ -85,6 +85,10 @@
   }
 .hide{
   display: none;
+  transition: 10s;
+}
+.open{
+  display: block!important;
   transition: 10s;
 }
 .center{
