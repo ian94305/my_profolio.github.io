@@ -83,6 +83,7 @@
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
+    min-width: 550px!important;
   }
 .none{
   display: none;
@@ -91,9 +92,7 @@
   display: none;
 
 }
-.open{
-  display: block!important;
-}
+
 .center{
   display: flex;
   justify-content: center;

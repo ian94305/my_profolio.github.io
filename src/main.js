@@ -103,15 +103,10 @@ window.addEventListener('scroll', function() {
 
     clouds.forEach(function(cloud) {
         cloud.style.transform = `scale(${1 - value * 0.0009})`;
-        // cloud.classList.toggle('hide');
       });
   }else{
     moon.style.visibility = 'hidden';
-    clouds.forEach(cloud => {
-      cloud.style.left = 200 - value * 0.5 + 'px';
-      cloud.style.top = 80 - value * 0.4 + 'px';
-      // cloud.classList.toggle('hide');
-    });
+
 
   };
 
