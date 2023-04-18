@@ -1,0 +1,101 @@
+nav div{
+    font-weight: bolder;
+}
+.nav_holder{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    z-index: 10000;
+    left: 50px;
+    
+}
+.nav_box{
+    display: flex;
+    margin: 20px 0;
+}
+.nav_btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var( --color-grey-bg);
+    border-radius: 100%;
+    padding: 10px 0;
+    border: solid black 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+.nav_btn:hover{
+    border: solid #fff 1px;
+    transform:  translateY(-10px);
+    background-color: var(   --color-btn_hover);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.nav_btn:hover +.hide {
+    color: #fff;
+    border: solid #fff 1px;
+    display: flex;
+    background-color:  var(--color-btn_hover);
+    border-radius: 40px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+.nav_btn img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* hamburger */
+.hamburger{
+    background-color: var(--color-grey-bg);
+
+    height: 40px;
+    width: 40px;
+    left: 40px;
+    top: 50px;
+    border: solid black 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+
+}
+.hamburger:hover{
+    border: solid #fff 1px;
+    transform:  translateY(-1px);
+    background-color: var(   --color-btn_hover);
+}
+.hamburger .fa-solid{
+    transform: scale(1.5);
+  };
+  .hamburger .fa-solid:hover{
+    color: #fff
+  };
+
+
+@media screen and (max-width: 900px) {
+
+  }
+  
+  @media screen and (max-width: 550px) {
+    .nav_box{
+        display: none;
+        
+    }
+    .nav_holder{
+        left: 0;
+    }
+    .hamburger{
+        display: flex;
+        position: fixed;
+   
+    }
+  }

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+
+:root {
+    --font-base: 'Cormorant Upright', serif;
+    --font-alt: 'Open Sans', sans-serif;
+    --font-family-chinese: ' sans-serif ,Helvetica , Arial , serif';
+    
+    --color-bright: #f1ef56;
+    --color-black: #0C0C0C;
+    --color-btn_hover: #000000c4;
+    --color-grey-bg: rgba(255, 255, 255, 0.7);
+
+
+    --font-size-XXL:3rem;
+    --font-size-XL:2.5rem;
+    --font-size-L:2rem;
+    --font-size-M:1.5rem;
+    --font-size-S:1rem;
+    --font-size-XS:0.5rem;
+  
+  }
+  
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    :root {
+  
+    
+      --font-size-XXL:2.3rem;
+      --font-size-XL:1.8rem;
+      --font-size-L:1.3rem;
+      --font-size-M:0.8rem;
+      --font-size-S:0.3rem;
+      --font-size-XS:0.25rem;
+    
+      
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    /* :root {
+  
+    
+      --font-size-XXL:2rem;
+      --font-size-XL:1.5rem;
+      --font-size-L:1rem;
+      --font-size-M:0.6rem;
+      --font-size-S:0.3rem;
+      --font-size-XS:0.25rem;
+    
+      
+    } */
+
+
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--microsoft-janhei);
+
+  }
+  
+  a{
+    color: unset;
+    text-decoration: none;
+  }
+  ul li{
+    list-style-type: none;
+}
+  body{
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    background-image: url(../asset/home/star_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+.hide{
+  display: none;
+  transition: 10s;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column{
+  flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+

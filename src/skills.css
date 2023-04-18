@@ -1,0 +1,139 @@
+.skills{
+  background: linear-gradient(to bottom right, #480971, #230253);
+  position: relative;
+  z-index: 100;
+  padding: 50px 0;
+}
+.skills::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 30px;
+  background:linear-gradient(to top,#480971, #230253);
+}
+
+
+
+
+/* flipcadrd */
+
+.card_holder{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px 50px;
+    min-width: 300px;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card-front img{
+    height: 60%;
+    width: 60%;
+    object-fit: cover;
+  }
+  .flip-card-front p{
+font-size: var(--font-size-L);
+font-weight: 400;
+  }
+  
+  .flip-card-back {
+    background-color: #d9d7c2;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back h3{
+    padding-top: 20px;
+    font-weight: bolder;
+    
+  }
+  .flip-card-back p{
+    height: 50%;
+    padding:5px 30px ;
+  }
+  .flip-card-back .center{
+    justify-content: space-between!important;
+    
+  }
+  .flip-card-back .icon{
+    height: 45px;
+    
+  }
+
+
+  @media screen and (max-width: 1017px) {
+
+  }
+  
+  @media screen and (max-width: 650px) {
+
+
+  }
+
+  .skills h1 {
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 30px;
+    overflow: hidden;
+
+  }
+  
+  .skills .hi {
+    display: inline-block;
+    color: #d9d7c2;
+  }
+  
+  .skills .text {
+    font-weight: normal;
+    padding-left: 1.2vw;
+    background: linear-gradient(to right, #f4d742, #f4d742 );
+  }
+  
+  .skills .box {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    height: 1vw;
+    z-index: -1;
+  }

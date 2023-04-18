@@ -1,0 +1,15 @@
+.connectme{
+    position: relative;
+    z-index: 90;
+    background: linear-gradient(to bottom right, #1E212D, #2C2E3E);
+    height: 50vh;
+    min-height: 0 !important ; 
+}
+.connectme::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 30px;
+    background:linear-gradient(to top, #1E2333,rgb(34, 33, 33));
+}

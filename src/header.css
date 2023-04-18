@@ -1,0 +1,86 @@
+.home{
+    min-height:100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_headline{
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 20px;
+    color: #fff;
+    position: fixed;
+    z-index: 4;
+    width: 70%;
+    text-align: center;
+    min-width: 500px;
+
+}
+.header_headline h1{
+    padding: 10px 30px;
+    white-space:nowrap;
+
+}
+.header_tip{
+    align-self: end;
+    width:20%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+ 
+}
+.header_tip p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space:nowrap;
+}
+.fa-solid{
+    margin: 20px;
+    transform: scale(2);
+}
+
+#cloud{
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+    mix-blend-mode:luminosity;
+    transition: 0.1s;
+}
+
+.moon{
+    background: url(../asset/home/moon.png);
+    position:fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10px;
+    left:100px;
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .room img{
+        object-fit: cover;
+    }
+    .card{
+        width: 18rem;
+        flex-direction: column;
+
+      } 
+}

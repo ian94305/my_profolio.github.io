@@ -1,0 +1,78 @@
+
+.room{
+    z-index: 5;
+    background: url(../asset/home/room.png);
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 110%;
+    width: 100%;
+    visibility :hidden;
+}
+.room-m{
+  z-index: 5;
+  background: url(../asset/home/room-m.jpg);
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+ display: none;
+}
+.room img{
+    object-fit: fill;
+    height: 100%;
+    width:100% ;
+    overflow: hidden;
+}
+
+#aboutme .card{
+    width: 80%;
+    flex-direction: row;
+    background-color: var(--color-grey-bg);
+    color: #000;
+    border: none;
+    gap: 40px; 
+    z-index: 70;
+    border-radius: 20px;
+
+  } 
+  #aboutme .card h3{
+    font-weight: bolder;
+    white-space:nowrap;
+
+  }
+  #aboutme .btn{
+    margin:0 10px;
+  }
+  #aboutme .card-body{
+    align-self: center;
+  }
+  #aboutme .card-img-top{
+    object-fit: cover;
+    height: 35%;
+    width: 30%;
+    align-self: center;
+    margin:20px;
+  }
+
+  @media screen and (max-width: 900px) {
+
+
+  }
+  
+  @media screen and (max-width: 650px) {
+    .room{
+      display: none;
+    }
+    .room-m{
+      display: block;
+    }
+    #aboutme .card{
+
+      flex-direction: column;
+      gap: 0;
+    } 
+  }
