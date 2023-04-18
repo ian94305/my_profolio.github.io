@@ -103,9 +103,15 @@ window.addEventListener('scroll', function() {
 
     clouds.forEach(function(cloud) {
         cloud.style.transform = `scale(${1 - value * 0.0009})`;
+        // cloud.classList.toggle('hide');
       });
   }else{
-    moon.style.visibility = 'hidden'; 
+    moon.style.visibility = 'hidden';
+    clouds.forEach(cloud => {
+      cloud.style.left = 200 - value * 0.5 + 'px';
+      cloud.style.top = 80 - value * 0.4 + 'px';
+      // cloud.classList.toggle('hide');
+    });
 
   };
 
@@ -152,11 +158,11 @@ words.forEach(word => {
 
 
 // gallery scroll
-let t2=gsap.timeline({
-  scrollTrigger:{
-    trigger:'.project',
-    start:"center bottom"
-  }
-});
-t2.from("projects_img",{ x:200,opacity:0,duration:1.5})
-  .from(".content",{ y:300,opacity:0,duration:1},"-=1")
+// let t2=gsap.timeline({
+//   scrollTrigger:{
+//     trigger:'.project',
+//     start:"center bottom"
+//   }
+// });
+// t2.from("projects_img",{ x:200,opacity:0,duration:1.5})
+//   .from(".content",{ y:300,opacity:0,duration:1},"-=1")

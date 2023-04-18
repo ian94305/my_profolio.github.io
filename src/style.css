@@ -63,7 +63,7 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: var(--microsoft-janhei);
-
+  
 
   }
   
@@ -75,7 +75,7 @@
     list-style-type: none;
 }
   body{
-    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    font-family:  "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
     background-image: url(../asset/home/star_bg.jpg);
     max-width: 100vw;
     background-repeat: no-repeat;
@@ -84,13 +84,15 @@
     background-size: cover;
     overflow-x: hidden;
   }
+.none{
+  display: none;
+}
 .hide{
   display: none;
-  transition: 10s;
+
 }
 .open{
   display: block!important;
-  transition: 10s;
 }
 .center{
   display: flex;
@@ -107,6 +109,7 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 550px!important;
 }
 
 
