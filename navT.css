@@ -1,4 +1,4 @@
-
+/* 
 
 .hamburger {
 	position: fixed;
@@ -39,14 +39,22 @@
 	top: 0;
 	left: 100%;
 	width: 100%;
-	min-height: 100vh;
-	display: block;
-	background-color: #000000e7;
-	padding-top: 120px;
+	height: 100%;
+	display: flex;
+	background-color: #000000ec;
 	transition: 0.4s;
     z-index: 400;
+    align-items: center;
+    justify-content: center;
 }
 
+.mobile-nav .container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .mobile-nav.is-active {
 	left: 0;
 }
@@ -54,7 +62,8 @@
 .mobile-nav a {
 	display: block;
 	width: 100%;
-	/* max-width: ; */
+	max-width: ;
+    font-size: 1.2rem;
 	text-align: center;
 	padding: 22px 16px;
     color: #fff;
@@ -64,8 +73,8 @@
 }
 
 .mobile-nav a:hover {
-	background-color: #050505;
-    color: #FFF;
+	background-color: #494747af;
+
 }
 
 @media (min-width: 768px) {
@@ -76,4 +85,4 @@
 	.hamburger {
 		display: none;
 	}
-}
+} */
