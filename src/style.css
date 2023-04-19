@@ -101,12 +101,16 @@
 .column{
   flex-direction: column;
 }
+.full{
 
+  width: 100%;
+}
 section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0!important;
     min-height: 100vh;
     min-width: 400px!important;
 }

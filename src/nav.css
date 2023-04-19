@@ -16,6 +16,10 @@ nav div{
     display: flex;
     margin: 20px 0;
 }
+.nav_box{
+    height: 100%;
+    width: 100%;
+}
 .nav_btn{
     width: 50px;
     height: 50px;
@@ -130,8 +134,7 @@ nav div{
     color: #fff;
     font-weight: bolder;
 	text-decoration: none;
-    border-radius: 20px;
-    border-top: solid#FFF 3px ;
+    border-top: solid#807b7b 1px ;
 }
 
 .mobile-nav a:hover {
