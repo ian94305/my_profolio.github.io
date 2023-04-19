@@ -22,12 +22,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .flip-card {
     background-color: transparent;
-    width: 350px;
+    width: 30%;
     height: 300px;
-    perspective: 1000px;
+    /* perspective: 1000px; */
     margin: 20px 60px ;
   }
   
@@ -130,11 +131,15 @@ font-weight: 400;
     z-index: -1;
   }
 
-  @media screen and (max-width: 1017px) {
-
+  @media screen and (max-width: 900px) {
+    .flip-card{
+      width: 60%;
+    }
   }
   
   @media screen and (max-width: 550px) {
-
+    .flip-card{
+      width: 70%;
+    }
 
   }

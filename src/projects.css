@@ -86,6 +86,10 @@
 
     }
 }
+
+.container{
+    margin-top: 10%;
+}
 .projects {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -101,6 +105,10 @@
     @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .container{
+        margin-top: 20%;
     }
     }
     

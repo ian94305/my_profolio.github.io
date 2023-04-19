@@ -157,8 +157,8 @@ function SendMail(){
     email_id:document.getElementById("email_id").value,message:document.getElementById("message").value
   }
   emailjs.send("service_bzcuis9","template_vml9pyj",params).then(function(res){
-    alert("success"+res.status);
-  })
+    alert("success"+res.status)
+  });
   setTimeout((function reset(){
     document.getElementById("fullName").value='';
     document.getElementById("email_id").value='';
