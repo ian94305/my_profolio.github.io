@@ -81,11 +81,13 @@ font-weight: 400;
   .flip-card-back h3{
     padding-top: 20px;
     font-weight: bolder;
+    border-bottom:solid #f4d742 4px;
     
   }
   .flip-card-back p{
     height: 50%;
     padding:5px 30px ;
+    
   }
   .flip-card-back .center{
     justify-content: space-between!important;
@@ -97,14 +99,7 @@ font-weight: 400;
   }
 
 
-  @media screen and (max-width: 1017px) {
 
-  }
-  
-  @media screen and (max-width: 650px) {
-
-
-  }
 
   .skills h1 {
     position: relative;
@@ -133,4 +128,13 @@ font-weight: 400;
     display: inline-block;
     height: 1vw;
     z-index: -1;
+  }
+
+  @media screen and (max-width: 1017px) {
+
+  }
+  
+  @media screen and (max-width: 550px) {
+
+
   }

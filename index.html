@@ -18,8 +18,15 @@
     <link rel="stylesheet" href="./src/skills.css">
     <link rel="stylesheet" href="./src/projects.css">
     <link rel="stylesheet" href="./src/connectme.css">
-
-
+  <!-- email js -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("cASfpX28pMp3md2pr");
+    })();
+  </script>
     <title>Ian We personal website</title>
 </head>
 <body>
@@ -97,8 +104,9 @@
 
 <!-- aboutme -->
     <section id="aboutme">
-        <div class="room">
-          <div class="card"  style="left:-600px;" >
+        <div class="room center">
+          <div class="card"  data-aos="fade-up-right"
+          data-aos-delay="700"   data-aos-duration="5000" >
             <img src="./asset/about/D291CDC9-4F81-4A15-BBD7-3ED3A962E09B.jpg" class="card-img-top" alt="...">
             <div class="card-body ">
               <h3 class="card-title">吳直諺&nbsp;&nbsp;IAN</h3>
@@ -111,8 +119,9 @@
             </div>
           </div>
         </div>
-        <div class="room-m">
-          <div class="card"  style="left:-600px;" >
+        <div class="room-m center">
+          <div class="card"  data-aos="fade-up-right"
+          data-aos-delay="80"   data-aos-duration="500" >
             <img src="./asset/about/D291CDC9-4F81-4A15-BBD7-3ED3A962E09B.jpg" class="card-img-top" alt="...">
             <div class="card-body ">
               <h3 class="card-title">吳直諺&nbsp;&nbsp;IAN</h3>
@@ -185,18 +194,17 @@
                       <img src="./asset/skills/database.png" >
                     </div>
                     <div class="flip-card-back">
-                      <h3>網頁前端</h3> 
-                      <p>在大學時選修了網頁設計課程，讓我對前端開發產生了濃厚的興趣。後來我參加了工研院的職業訓練，從此正式開始了程式學習的道路。為了提升自己的能力，我也報名參加了臺大的各式程式課程，希望能夠在這個領域有更多的發展和成就。</p> 
-                      <div class="center" style=" margin:0 20px;">
-
-                        <img class="icon" src="./asset/skills/html-5.png" title="">
-                        <img class="icon" src="./asset/skills/css-3.png" title="">
-                        <img class="icon" src="./asset/skills/js.png" title="">
-                        <img class="icon" src="./asset/skills/react-1-logo-png-transparent.png" title="">
+                      <h3>資料庫管理</h3> 
+                      <p>本科系圖書管理的課程就有包含MySQL的必修課，在FintechAI課程更是得到更進一步的精進，後續也因為在台大的Javascript資訊進修班接觸到了mongoDB</p> 
+                      <div class="center" style=" margin:0 100px;">
+                        <img class="icon" src="./asset/skills/mongodb.png" title="">
+                        <img class="icon" src="./asset/skills/mysql.png" title="">
                       </div>
                     </div>
                   </div>
-                </div>                <div class="flip-card" data-aos="zoom-in"
+                </div>                
+                
+                <div class="flip-card" data-aos="zoom-in"
                 data-aos-delay="80"   data-aos-duration="500">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -204,9 +212,14 @@
                       <img src="./asset/skills/programing.jpg" >
                     </div>
                     <div class="flip-card-back">
-                      <h1>John Doe</h1> 
+                      <h3>網頁後端</h3> 
                       <p>Architect & Engineer</p> 
-                      <p>We love that guy</p>
+                      <div class="center" style=" margin:0 100px;">
+
+                        <img class="icon" src="./asset/skills/nodejs.png" title="">
+                        <img class="icon" src="./asset/skills/flask.png" title="">
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -223,47 +236,62 @@
             <div class="wire"></div>
         </div>
 
-        <div class="card" >
-            <img src="./asset/about/D291CDC9-4F81-4A15-BBD7-3ED3A962E09B.JPG" class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h3 class="card-title">吳直諺&nbsp;&nbsp;IAN</h3>
-              <p class="card-text">嗨~歡迎來到我的網站，我是一名正在練習網頁開發的學習者。熟悉HTML、CSS、JavaScript等技術，目前正在學習React.js，這是一個簡單的網站用於展示我的所學。</p>
-
-              <a href="#" class="btn btn-primary">我的履歷</a>
-              <a href="#" class="btn btn-outline-secondary">下載履歷</a>
-  
-  
+        <div class="container">
+          <h2>Projects</h2>
+          
+          <div class="projects-grid">
+            <div class="project" style="background-image: url(../asset/project/fintechAI.png);">
+              <div class="content">
+                <h3>FintechAI 專案成果</h3>
+                <p>由工研院主辦的程式設計培訓課程，為培養全方位的人才，內容從前端介面到資料庫在到後端的資料處理都有，而我們這組的專案是利用Bard及randomforest去訓練ai來判斷。新聞發布後對股市大盤造成的影響，而我主要負責前端介面及api串接</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
             </div>
-          </div>
-          <div class="card" >
-            <img src="./asset/about/D291CDC9-4F81-4A15-BBD7-3ED3A962E09B.jpg" class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h3 class="card-title">吳直諺&nbsp;&nbsp;IAN</h3>
-              <p class="card-text">嗨~歡迎來到我的網站，我是一名正在練習網頁開發的學習者。熟悉HTML、CSS、JavaScript等技術，目前正在學習React.js，這是一個簡單的網站用於展示我的所學。</p>
-
-              <a href="#" class="btn btn-primary">我的履歷</a>
-              <a href="#" class="btn btn-outline-secondary">下載履歷</a>
-  
-  
+            <div class="project">
+              <div class="content">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
             </div>
-          </div>        <div class="card" >
-            <img src="./asset/about/D291CDC9-4F81-4A15-BBD7-3ED3A962E09B.JPG" class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h3 class="card-title">吳直諺&nbsp;&nbsp;IAN</h3>
-              <p class="card-text">嗨~歡迎來到我的網站，我是一名正在練習網頁開發的學習者。熟悉HTML、CSS、JavaScript等技術，目前正在學習React.js，這是一個簡單的網站用於展示我的所學。</p>
-
-              <a href="#" class="btn btn-primary">我的履歷</a>
-              <a href="#" class="btn btn-outline-secondary">下載履歷</a>
-  
-  
+            <div class="project">
+              <div class="content">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
             </div>
-          </div>
+            <div class="project">
+              <div class="content">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="content">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="content">
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                <a href="#" class="button">Learn more</a>
+              </div>
+            </div>
     </section>
 
 
     <section class="connectme" id="connectme"> 
-        
+      <input type="text" id="fullName" placeholder="Full Name" required><br>
+      <input type="text" id="email_id" placeholder="Email Id" required><br>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="reset" onclick="SendMail()">送出</button>
     </section>
+    
 
 
 <!-- bootstrap -->

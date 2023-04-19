@@ -124,13 +124,13 @@ nav div{
 .mobile-nav a {
 	display: block;
 	width: 100%;
-	/* max-width: ; */
     font-size: 1.2rem;
 	text-align: center;
 	padding: 18px 16px;
     color: #fff;
     font-weight: bolder;
 	text-decoration: none;
+    border-radius: 20px;
     border-top: solid#FFF 3px ;
 }
 

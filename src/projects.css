@@ -79,31 +79,81 @@
     background-color: #000;
 }
 
-#projects .card{
-    width: 80%;
-    flex-direction: row;
-    background-color: var(--color-grey-bg);
-    color: #000;
-    border: none;
-    gap: 40px; 
-    z-index: 70;
-    border-radius: 20px;
-    transition:  0.2s;
-  } 
-  #projects .card h3{
-    font-weight: bolder;
+@media(max-width: 1024px){
+    .light{
 
-  }
-  #projects .btn{
-    margin:0 10px;
-  }
-  #projects .card-body{
-    align-self: center;
-  }
-  #projects .card-img-top{
-    object-fit: cover;
-    height: 35%;
-    width: 30%;
-    align-self: center;
-    margin:20px;
-  }
+        height: 18%;
+
+    }
+}
+.projects {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    }
+    
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+    }
+    
+    @media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 767px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    }
+    
+    .project {
+    background-image: url('../asset/project/fintechAI.png');
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+    }
+    
+    .project .content {
+    opacity: 0;
+    color: #FFF;
+    padding: 16px;
+    background-color: rgba(64, 39, 68, 0.8);
+    transition: 0.4s;
+    }
+    
+    .project .content h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    }
+    
+    @media (max-width: 1024px) {
+    .project .content h3 {
+    font-size: 28px;
+    }
+    }
+    
+    .project .content p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    }
+    
+    @media (max-width: 1024px) {
+    .project .content p {
+    font-size: 16px;
+    }
+    }
+    
+    .project:hover .content {
+    opacity: 1;
+    }
+    
+    .center {
+    text-align: center;
+    }

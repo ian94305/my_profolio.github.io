@@ -35,7 +35,7 @@ const moon = document.querySelector('.moon');
 const room = document.querySelector('.room');
 const clouds=document.querySelectorAll('#cloud');
 const headline = document.querySelector('.header_headline');
-const cards=document.querySelectorAll('.card');
+
 // [0]:aboutme的卡片
 
 
@@ -56,21 +56,19 @@ window.addEventListener('scroll', function() {
   if (scale < 300) { 
     headline.style.visibility = 'visible';  
     room.style.visibility = 'hidden';
-    cards[0].style.visibility = 'hidden';
  
   } else if (scale >= 300 && scale < 630) {
     room.style.top = 100 + value * 0.85 + 'px';
     room.style.transform = `scale(${2.2 - value * 0.00191})`;
     room.style.visibility = 'visible';
-    cards[0].style.visibility = 'visible';
     headline.style.visibility = 'hidden';
  
-    cards[0].style.left= -1000+ value*1.6+'px' ; 
+
 
   } else {
     room.style.transform = '';
     room.style.top = '';
-    cards[0].style.left='';
+ 
 
     headline.style.visibility = 'hidden';
 
@@ -150,6 +148,24 @@ words.forEach(word => {
   masterTl.add(tl)
 })
 
+//email
+
+function SendMail(){
+  
+  let params={
+    from_name:document.getElementById("fullName").value,
+    email_id:document.getElementById("email_id").value,message:document.getElementById("message").value
+  }
+  emailjs.send("service_bzcuis9","template_vml9pyj",params).then(function(res){
+    alert("success"+res.status);
+  })
+  setTimeout((function reset(){
+    document.getElementById("fullName").value='';
+    document.getElementById("email_id").value='';
+    document.getElementById("message").value='';
+    console.log('reset');
+}),2000);
+}
 
 
 // gallery scroll
