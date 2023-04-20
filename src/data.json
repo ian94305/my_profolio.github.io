@@ -3,13 +3,13 @@
     {
         "name":"FintechAI專案",
         "url":"./src/1_eyeFollow_cursor/open.html",
-        "img":"../asset/project/fintechAI.png",
+        "img":"./asset/project/fintechAI.png",
         "github":"https://github.com/Lai-Da/TaiwanNewsAnalysis"
     }, 
     {
         "name":"sweetshop",
         "url":"https://ian94305.github.io/shopcart_template.github.io/",
-        "img":"../asset/project/sweetshop.png",
+        "img":"./asset/project/sweetshop.png",
         "github":"https://github.com/ian94305/shopcart_template.github.io"
     }, 
     {
@@ -21,7 +21,7 @@
     {
         "name":"javascript練習",
         "url":"https://ian94305.github.io/javascript_gear.github.io/",
-        "img":"../asset/project/jsavscript_note.png",
+        "img":"./asset/project/jsavscript_note.png",
         "github":"https://github.com/ian94305/javascript_gear.github.io"
     }, 
     {

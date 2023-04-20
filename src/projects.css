@@ -103,15 +103,13 @@
     color: inherit;
     font: inherit;
 
-    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
     line-height: normal;
 
-    /* Corrects font smoothing for webkit */
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
 
-    /* Corrects inability to style clickable `input` types in iOS */
-    -webkit-appearance: none;
+
+
 }
 
 .projects {
@@ -161,10 +159,11 @@
     height: 288px;
     }
     
-    .project .content h3 {
-    font-size: 32px;
+    .projects h3 {
+    font-size: 1.5rem;
     margin-bottom: 16px;
-    color: #FFF;white-space: nowrap;
+    color: #FFF;
+    white-space: nowrap;
     }
     
     @media (max-width: 1024px) {

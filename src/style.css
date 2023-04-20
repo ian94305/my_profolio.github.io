@@ -83,7 +83,7 @@
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
-    min-width: 400px!important;
+    min-width: 350px!important;
   }
 .none{
   display: none;
@@ -112,7 +112,7 @@ section{
     align-items: center;
     margin: 0!important;
     min-height: 100vh;
-    min-width: 400px!important;
+    min-width: 350px!important;
 }
 
 
