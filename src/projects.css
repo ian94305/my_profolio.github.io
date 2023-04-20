@@ -90,6 +90,30 @@
 .container{
     margin-top: 10%;
 }
+.resetButton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
 .projects {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -124,6 +148,7 @@
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    height: 288px;
 
     }
     
@@ -133,11 +158,13 @@
     padding: 16px;
     background-color: rgba(47, 0, 78, 0.897);
     transition: 0.4s;
+    height: 288px;
     }
     
     .project .content h3 {
     font-size: 32px;
     margin-bottom: 16px;
+    color: #FFF;white-space: nowrap;
     }
     
     @media (max-width: 1024px) {

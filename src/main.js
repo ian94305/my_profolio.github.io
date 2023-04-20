@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
 
   };
 
-// aboutme開關
+// 開關
 if(scale >= 1800 && scale < 3000){
   lightUp();
 }else{
@@ -120,7 +120,7 @@ console.log(scale);
 
 
 
-// aboutme開關
+// 開關
 
 let lightBtn=document.querySelector('.light_btn');
 let body=document.querySelector('.projects');
@@ -148,6 +148,28 @@ words.forEach(word => {
   masterTl.add(tl)
 })
 
+// project ajax
+fetch("data.json")
+.then(function(response){
+	return response.json();
+})
+.then(function(projects){
+	let placeholder = document.querySelector("#data-output");
+	let out = "";
+	let i=1;
+	for(let project of projects){
+		out += `
+		<a href="${project.url}">
+		<div class="list"><p> ${i} &nbsp${project.name}</p></div>
+		</a>
+		`;
+		i+=1;
+	}
+
+	placeholder.innerHTML = out;
+});
+
+
 //email
 
 function SendMail(){
@@ -157,23 +179,13 @@ function SendMail(){
     email_id:document.getElementById("email_id").value,message:document.getElementById("message").value
   }
   emailjs.send("service_bzcuis9","template_vml9pyj",params).then(function(res){
-    alert("success"+res.status)
+    alert("成功送出")
   });
   setTimeout((function reset(){
     document.getElementById("fullName").value='';
     document.getElementById("email_id").value='';
     document.getElementById("message").value='';
     console.log('reset');
-}),2000);
+}),4000);
 }
 
-
-// gallery scroll
-// let t2=gsap.timeline({
-//   scrollTrigger:{
-//     trigger:'.project',
-//     start:"center bottom"
-//   }
-// });
-// t2.from("projects_img",{ x:200,opacity:0,duration:1.5})
-//   .from(".content",{ y:300,opacity:0,duration:1},"-=1")
