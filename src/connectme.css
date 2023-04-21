@@ -23,8 +23,18 @@
     min-height: 50vh;
 }
 .left{
+    padding: 20px 0;
     height: 100%;
     width: 50%;
+
+}
+.left h2{
+    width: 100%;
+    color: aliceblue;
+}
+.left p{
+    color: aliceblue;
+    padding: 10px;
 
 }
 .right{

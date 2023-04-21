@@ -67,7 +67,9 @@
   }
 
   @media screen and (max-width: 900px) {
-
+    #aboutme .card{
+      width: 70%;
+    } 
 
   }
   
@@ -79,7 +81,7 @@
       display: flex;
     }
     #aboutme .card{
-
+      width: 90%;
       flex-direction: column;
       gap: 0;
     } 
