@@ -45,7 +45,11 @@
                 <!--header-->
                 <div class="header clearfix">
                     <div class="avatar">
-                        <a href="javascript:;" class="avatar_pic circle"><em class="circle doing">詳細</em></a>
+                        <a href="javascript:;" class="avatar_pic circle">
+                            <div class="selfy-container">
+                                <img src="../images/self.jpg" alt="QR Code">
+                            </div>
+                            <em class="circle doing">詳細</em></a>
                         <b class="doing r5">關於</b>
                     </div>
                     <div class="base">
@@ -55,7 +59,10 @@
                         <span>
                             <p><i aria-hidden="true" data-icon="&#xe01d;"></i>臺灣臺北市萬華區</p>
                             <p><a href="javascript:;" class="tel_me"><i aria-hidden="true" data-icon="&#xe00b;"></i>聯繫方式</a></p>
-                            <p class="mt20"><span class="wechat"></span></p>
+                            <p><i aria-hidden="true" data-icon="&#xe01d;"></i>動態履歷請掃下方QRcode</p>
+                            <div class="qrcode-container">
+                                <img src="../images/wechat.png" alt="QR Code">
+                            </div>
                         </span>
 
                     </div>
@@ -92,43 +99,38 @@
                             <dt><h6>語言能力<h6></dt>
                         </dl>
                         <dl class="clearfix mt20 mtl20">
-                            <dt>英文:精通</dt>
-
+                            <dt class="mt5">英文:精通</dt>
+                            <dt class="mt5">台語:普通</dt>
+                            <dt class="mt5">日文:基礎</dt>
+                            <dt class="mt5">西班牙文:基礎</dt>
                         </dl> 
-                        <dl class="clearfix mtl20">
-                            <dt>台語:普通</dt>
-
-                        </dl> 
-                        <dl class="clearfix mtl20">
-                            <dt>日文:基礎</dt>
-
-                        </dl>            
-                        <dl class="clearfix mtl20">
-                            <dt>西班牙文:基礎</dt>
-
-                        </dl>                 
+  
                         <dl class="clearfix mt20 hover-color">
-                            <dt><h6>專案管理<h6></dt>
+                            <dt><h6>教學相關<h6></dt>
                         </dl>
                         <dl class="clearfix mt20 mtl20">
-                            <dt>高中、大學擔任社團幹部，從企劃案撰寫至執行的經驗</dt>
-
+                            <dt class="mt5">目前職務會協助系統手冊編寫及教育訓練</dt>
+                            <dt class="mt5">擔任家教時有了設計教案的經驗，及擅長與學生相處</dt>
+                            <dt class="mt5">在補習班擔任櫃台及助教對於教學及補習班運作方式皆有相當的認知</dt>
+                        </dl>            
+                        <dl class="clearfix mt20 hover-color">
+                            <dt><h6>專案執行<h6></dt>
+                        </dl>
+                        <dl class="clearfix mt20 mtl20">
+                            <dt class="mt5">高中、大學擔任社團幹部，從企劃案撰寫至執行的經驗</dt>
+                            <dt class="mt5">目前職務長期在外於用戶機關駐點，具備獨立作業的能力</dt>
                         </dl> 
 
                         <dl class="clearfix mt20 hover-color">
-                            <dt><h6>淡江大學 資訊與圖書館學系<h6></dt>
-                
+                            <dt><h6>程式技能<h6></dt>
                         </dl>
-                        <dl class="clearfix mtl30">
-                            <dt>2017-2021</dt>
-                        </dl>
-                        <dl class="clearfix mt20 hover-color">
-                            <dt><h6>臺北市立成淵高中<h6></dt>
-                        </dl>
-                        <dl class="clearfix mtl30">
-                            <dt>2014-2017</dt>
-
-                        </dl>
+                        <dl class="clearfix mt20 mtl20">
+                            <dt class="mt5">資料庫MSSQL : 目前職務為日常維護用戶資料及協助系統問題排解</dt>
+                            <dt class="mt5">主機LINUX : 目前職務會須確認伺服器狀況及調閱LOG資料</dt>
+                            <dt class="mt5">前端 : 大學時學習網站架設相關課程對於html、css、js有了初步認識，畢業後仍持學習，並自學React框架</dt>
+                            <dt class="mt5">後端 : 主要為python及javasript，對於flask及node.js皆有基礎</dt>
+                        </dl> 
+  
 
 
 
@@ -237,8 +239,7 @@
         </div>
         
         <div class="footer clearfix">
-            Powered By LDuo
-            <a href="https://github.com/lduo/resume" target="_blank">嘿！如果你喜欢~我已放到github供大家免费下载</a>
+            &copy;by IAN WU
         </div>
 
         <!--个人基本信息-->
@@ -260,32 +261,8 @@
         </div>
         <div class="tip_avatar_bg"></div>
 
-        <!--作品内容-->
-        <div class="tip_product sd">
-
-            <!--关闭作品展示-->
-            <a href="javascript:;" class="r5 tip_area_close" aria-hidden="true" data-icon="&#x4d;"></a>
-
-            <div id="tip_carousel" class="carousel slide" data-ride="carousel">
-
-                <!-- 作品区域 -->
-                <div class="carousel-inner">
-                    
-
-                <!-- 左右控制 -->
-                <a class="carousel-control left" href="#tip_carousel" data-slide="prev">
-                    <i aria-hidden="true" data-icon="&#x34;"></i>
-                </a>
-                <a class="carousel-control right" href="#tip_carousel" data-slide="next">
-                    <i aria-hidden="true" data-icon="&#x35;"></i>
-                </a>
-
-            </div>
 
 
-        </div>
-
-        <div class="bye"><span>再见</span></div>
 
         <!--Jquery 2.1 不支持ie6、7、8-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
