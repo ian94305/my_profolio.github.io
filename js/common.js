@@ -37,6 +37,12 @@ $(function() {
         });
     });
 
+    // 標題變色
+    document.querySelectorAll('.toggle-color').forEach(function (item) {
+        item.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    });
     $('.tip_close').click(function(){
         $(this).transition({
             rotate: '180deg'
