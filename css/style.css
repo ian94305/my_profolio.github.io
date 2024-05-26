@@ -181,6 +181,7 @@ i { font-size: 16px; }
 }
 .selfy-container {
 	text-align: center; /* 使 QR Code 置中 */
+	z-index: -10;
 }
 .selfy-container img{
 	width: 100px; /* 設置 QR Code 寬度 */
